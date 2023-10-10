@@ -14,7 +14,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::prefix('v1')->group(function () {
+Route::prefix('test')->group(function () {
     Route::get('/user', [UserController::class, 'index']);
     Route::get('/user/{id}', [UserController::class, 'show']);
     Route::post('/user', [UserController::class, 'store']);
