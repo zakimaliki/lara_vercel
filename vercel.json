@@ -7,7 +7,7 @@
     "routes": [
         {
             "src": "/posters/(.*)",
-            "dest": "/posters/$1"
+            "dest": "/api/posters/$1"
         },
         {
             "src": "/(.*)",
