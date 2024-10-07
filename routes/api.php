@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,12 @@ use App\Http\Controllers\UserController;
     Route::delete('/user/{id}', [UserController::class, 'destroy']);
 
 
+
+    Route::get('/movies', [MovieController::class, 'index'])->name('movies.index');
+    Route::post('/movies', [MovieController::class, 'store'])->name('movies.store');
+    Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
+    Route::put('/movies/{id}', [MovieController::class, 'update'])->name('movies.update');
+    Route::delete('/movies/{id}', [MovieController::class, 'destroy'])->name('movies.destroy');
+    
+    
 
