@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $baseUrl = env('APP_URL', 'lara-vercel-one.vercel.app') . '/posters/';
+        $baseUrl = env('APP_URL', 'https://lara-vercel-one.vercel.app') . '/posters/';
 
         Movie::create([
             'title' => 'Inception',
